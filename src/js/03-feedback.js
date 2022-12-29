@@ -27,11 +27,11 @@ if (storedState) {
 // Wyczyść storage i pola formularza po wysłaniu formularza
 form.addEventListener('submit', function (event) {
   event.preventDefault();
-  localStorage.removeItem('feedback-form-state');
-  emailInput.value = '';
-  messageInput.value = '';
   console.log({
     email: emailInput.value,
     message: messageInput.value,
   });
+  localStorage.removeItem('feedback-form-state');
+  emailInput.value = '';
+  messageInput.value = '';
 });
