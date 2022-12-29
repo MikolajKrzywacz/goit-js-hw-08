@@ -35,21 +35,3 @@ form.addEventListener('submit', function (event) {
     message: messageInput.value,
   });
 });
-
-// emailInput.addEventListener(
-//   'input',
-//   _.throttle(() => {
-//     localStorage.setItem('email', `${emailInput.value}`);
-//   }, 500)
-// );
-// messageInput.addEventListener(
-//   'input',
-//   _.throttle(() => {
-//     localStorage.setItem('message', `${messageInput.value}`);
-//   }, 500)
-// );
-// form.addEventListener('submit', e => {
-//   e.preventDefault();
-// });
-// console.log(emailInput);
-// console.log(messageInput);
