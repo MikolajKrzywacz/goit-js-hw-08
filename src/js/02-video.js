@@ -10,7 +10,7 @@ const onSaveTimeUpdate = ({ seconds } = 0) => {
 };
 
 const getCuttentVideoPlayerTime = function () {
-  return localStorage.getItem(TIME_STAMP);
+  return localStorage.getItem(TIME_STAMP) || 0;
 };
 
 player.setCurrentTime(getCuttentVideoPlayerTime());
